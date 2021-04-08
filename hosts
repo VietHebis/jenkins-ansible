@@ -1,0 +1,4 @@
+[test]
+203.162.56.134 
+[test:vars]
+ansible_ssh_user=devuser
