@@ -1,8 +1,4 @@
 - hosts: test
-  remote_user: root
-  become: yes
   tasks:
   - name: Restart service filebeat, in all cases
-    service:
-     name: filebeat
-     state: restarted    
+    shell: service filebeat restart
