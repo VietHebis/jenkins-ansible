@@ -1,4 +1,4 @@
 - hosts: test
   tasks:
   - name: Restart service filebeat, in all cases
-    command: sudo service filebeat restart
+    command: service filebeat restart
