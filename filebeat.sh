@@ -1,1 +1,1 @@
-service filebeat restart
+sudo service filebeat restart
