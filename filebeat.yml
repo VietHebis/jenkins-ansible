@@ -1,4 +1,12 @@
 - hosts: test
   tasks:
+  - name: coppy
+    copy:
+      src: filebeat.sh
+      dest: /home/devuser/filebeat.sh
+      owner: devuser
+      group: devuser
+      mode: '0700'
   - name: Restart service filebeat, in all cases
-    shell:  filebeat.sh >> filebeat.txt
+    shell: /home/devuser/filebeat.sh >> filebeat_log
+
